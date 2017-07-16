@@ -21,7 +21,6 @@ class Dict:
 
     def _find_index_in_bucket(self, key, bucket):
         for i, item in enumerate(bucket):
-            # TODO: figure out identity check
             if key == item[0]:
                 return i
         raise KeyError(key)
