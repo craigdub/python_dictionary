@@ -12,7 +12,7 @@ def myhash(s):
     return h
 
 class Dict:
-    'A custom dict reimplementation based on lists using seperate chaining'
+    'A custom dict reimplementation using seperate chaining'
 
     def _get_bucket(self, key):
         i = myhash(key) % self.n
