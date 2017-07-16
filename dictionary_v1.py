@@ -118,17 +118,3 @@ class Dict:
         pairs = ', '.join([f'{k!r}: {self[k]!r}' for k in self.keys()])
         return '{' + pairs + '}'
 
-
-''' More todo:
-
-    + d.get(k, default)
-    + d.update(list_of_items())
-    + d.pop(k, default)
-    + d.setdefault()
-    + Variable size:  whenever the dict two-thirds full,
-                    rebuild it will double the size
-    + iterate over d
-    + refactor desk and folder to one buckets
-    - we should add caching - this can be done by adding another list that
-      keeps track of the hash values for each key
-'''
